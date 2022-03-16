@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* Header Section Area ------------------------- */
+.main-header {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    margin-bottom: 25rem;
+}
+
+.main-header::after {
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+/* End Header Section Area --------------------- */
+
+/* About Section Area -------------------------- */
+.main-content {
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-section .about-img {
+    width: 70%;
+    margin: auto;
+}
+
+.about-section .about-content {
+    margin: .3rem;
+    padding: 2rem;
+    border: 1px dotted black;
+    border-radius: 20px;
+}
+
+.about-content .about-inner h2{
+    margin: 1rem 0;
+}
+
+.about-content .about-inner p {
+    font-size: .9rem;
+    margin-bottom: 1rem;
+}
+/* End About Section Area ---------------------- */
+
+/* Coaching Section Area ----------------------- */
+.main-coaching-section {
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    position: relative;
+}
+
+.main-coaching-section .coaching-title {
+    text-align: center;
+}
+
+.coaching-title h2 {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    color: rgb(228, 228, 228);
+}
+
+.coaching-title p {
+    font-size: .8rem;
+    line-height: 1.2rem;
+    color: rgb(126, 126, 126);
+    width: 70%;
+    margin: auto;
+}
+
+.coaching-title {
+    padding-bottom: 2rem;
+}
+
+.img-container  {
+    display: flex;
+    justify-content:space-between;
+    position: relative;
+}
+
+.img-container .img-inner {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.img-container img {
+    width: 85%;
+    flex-basis: 10%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* End Coaching Section Area ------------------- */
+
+/* Media Query Section-------------------------- */
+@media (max-width:600px) {
+    .main-header {
+        width: 100%;
+        height: 1vh;
+        position: relative;
+        margin-bottom: 16rem;
+    }
+
+    /* About Section */
+    .about-section {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    
+    .about-section .about-img {
+        width: 70%;
+        margin: auto;
+    }
+    
+    .about-section .about-content {
+        margin: .5rem;
+        padding: 1rem;
+        border: 1px dotted black;
+        border-radius: 20px;
+    }
+    /* About Section */
+
+    /* Coaches Section */
+    .coaching-title h2 {
+        font-size: 2.5rem;
+        line-height: 2.3rem;
+        padding-bottom: 1.2rem;
+        color: white;
+    }
+
+    .coaching-title p {
+        width: 90%;
+        font-size: 1rem;
+    }
+    /* Coaches Section */
+
+    /* Footer Section */
+    .footer-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: black;
+        color: rgb(68, 68, 68);
+        padding: 2rem;
+        font-size: .9rem
+        ;
+    }
+    /* Footer Section */
+
+    /* Images of Coaches Container */
+    .img-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .img-container .img-inner {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 2.5rem;
+    }
+    /* End Images of Coaches Container */
+}
+/* End Media Query Section---------------------- */
